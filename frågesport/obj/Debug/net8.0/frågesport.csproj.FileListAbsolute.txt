@@ -1,0 +1,14 @@
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\bin\Debug\net8.0\frågesport.exe
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\bin\Debug\net8.0\frågesport.deps.json
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\bin\Debug\net8.0\frågesport.runtimeconfig.json
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\bin\Debug\net8.0\frågesport.dll
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\bin\Debug\net8.0\frågesport.pdb
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.AssemblyInfoInputs.cache
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.AssemblyInfo.cs
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.csproj.CoreCompileInputs.cache
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.dll
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\refint\frågesport.dll
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.pdb
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.genruntimeconfig.cache
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\ref\frågesport.dll
