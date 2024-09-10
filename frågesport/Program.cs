@@ -1,84 +1,135 @@
-﻿int score = 0;
-Console.WriteLine("question one.  what is 1+1");
-Console.WriteLine("A. 15   B. 3   C. nither");
+﻿using System.Linq.Expressions;
+
+bool score1 = false;
+bool score2 = false;
+bool score3 = false;
+int correct = 0;
+Console.WriteLine("question one.  you have a fox a chicken and a small bag of grain you have to bring them over a river and can only bring one at a time having to leave the other two behind, if the fox is left with the chicken it will eat it and if the chicken is left with the grain it will eat it how do you get all three accross the river. to be helpfull im giving you three alternatives");
+Console.WriteLine("A. fox over, back, chicken over, fox back, grain over, back chicken over    B. chicken over, back, fox over, back, grain over  C. chicken over, back, fox over, chicken back, grain over, back chicken over");
 string awnserone = Console.ReadLine();
+if (awnserone.ToLower() == "a" || awnserone.ToLower() == "b" ||awnserone.ToLower() == "c") {
 if (awnserone.ToLower() == "c")
 {
-    score = score + 1;
+    score1 = true;
+    correct = correct + 1;
     Console.WriteLine("correct!!");
 }
 
 if (awnserone.ToLower() == "a" || awnserone.ToLower() == "b")
 {
-    Console.WriteLine("incorrect idiot");
+    Console.WriteLine("incorrect, do better");
 }
-Console.WriteLine("question 2.  what color is grass usually?");
-Console.WriteLine("A. purple  B. green  C. blue");
+} else {
+    Console.WriteLine("that counts as a wrong awnser, should have awnserd with one of the alternatives");
+}
+Console.WriteLine("question 2.  what color is best?");
+Console.WriteLine("A. red  B. blue  C. green");
 string awnserztwo = Console.ReadLine();
-
+if (awnserztwo.ToLower() == "a" || awnserztwo.ToLower() == "b" ||awnserztwo.ToLower() == "c"){
 if (awnserztwo.ToLower() == "b")
 {
-    score = score + 1;
-    if (score == 2)
+    score2 = true;
+    correct = correct + 1;
+    if (score2 == true)
     {
-    Console.WriteLine("correct again!!");
+        if (score1 == true)
+        {
+            Console.WriteLine("correct again!!");
+        }
+        if (score1 == false)
+        {
+            Console.WriteLine("thats more like it!!");
+        }
     }
-     if (score == 1)
-    {
-    Console.WriteLine("thats more like it!!");
-    }
-    
-  
+
 }
 
-if (awnserone.ToLower() == "a" || awnserone.ToLower() == "c")
+if (awnserztwo.ToLower() == "a" || awnserztwo.ToLower() == "c")
 {
-       if (score == 1)
+    if (score2 == false)
     {
-    Console.WriteLine("i expected more from you");
+        if (score1 == true)
+        {
+            Console.WriteLine("i expected more from you");
+        }
+        if (score1 == false)
+        {
+            Console.WriteLine("you are really bad at this...");
+        }
     }
-     if (score == 0)
-    {
-    Console.WriteLine("you are really bad at this...");
-    }
-    
+
+}
+}else {
+    Console.WriteLine("that counts as a wrong awnser, should have awnserd with one of the alternatives");
 }
 Console.WriteLine("what is the meaning of life?");
 Console.WriteLine("A. 42  B. green  C. what?");
 string awnserzthreee = Console.ReadLine();
+if (awnserzthreee.ToLower() == "a" || awnserzthreee.ToLower() == "b" ||awnserzthreee.ToLower() == "c"){
 if (awnserzthreee.ToLower() == "a")
 {
-    score = score + 1;
-      if (score == 3)
+    score3 = true;
+    correct = correct + 1;
+    if (score3 == true)
     {
-    Console.WriteLine("you got them all!!");
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("you got them all!!");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("good save");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("must have missclicked on question 2 ;)");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("lucky guess >:(");
+            }
+        }
     }
-    if (score == 2)
-    {
-    Console.WriteLine("2 out of 3 is not too bad i guess..");
-    }
-     if (score == 1)
-    {
-    Console.WriteLine("lucky guess >:(");
-    }
-    
-  
+
+
 }
 
-if (awnserone.ToLower() == "a" || awnserone.ToLower() == "c")
+if (awnserzthreee.ToLower() == "b" || awnserzthreee.ToLower() == "c")
 {
-        if (score == 2)
+    if (score3 == false)
     {
-    Console.WriteLine("you were so close:(");
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("ah sooooo close :(");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("must have been lucky on question 2");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("peaked on the first question");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("how are you so bad at this");
+            }
+        }
     }
-       if (score == 1)
-    {
-    Console.WriteLine("womp womp only one right");
-    }
-     if (score == 0)
-    {
-    Console.WriteLine("your shit at this");
-    }
-    
+
 }
+}else {
+    Console.WriteLine("that counts as a wrong awnser, should have awnserd with one of the alternatives");
+}
+Console.WriteLine($"you got {correct} correct");
 Console.ReadLine();
