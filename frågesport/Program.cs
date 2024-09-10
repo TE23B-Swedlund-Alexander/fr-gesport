@@ -3,6 +3,7 @@
 bool score1 = false;
 bool score2 = false;
 bool score3 = false;
+bool score4 = false;
 int correct = 0;
 Console.WriteLine("question one.  you have a fox a chicken and a small bag of grain you have to bring them over a river and can only bring one at a time having to leave the other two behind, if the fox is left with the chicken it will eat it and if the chicken is left with the grain it will eat it how do you get all three accross the river. to be helpfull im giving you three alternatives");
 Console.WriteLine("A. fox over, back, chicken over, fox back, grain over, back chicken over    B. chicken over, back, fox over, back, grain over  C. chicken over, back, fox over, chicken back, grain over, back chicken over");
@@ -76,11 +77,11 @@ if (awnserzthreee.ToLower() == "a")
         {
             if (score1 == true)
             {
-                Console.WriteLine("you got them all!!");
+                Console.WriteLine("almost there!!");
             }
             if (score1 == false)
             {
-                Console.WriteLine("good save");
+                Console.WriteLine("first one was tricky");
             }
         }
         if (score2 == false)
@@ -127,6 +128,128 @@ if (awnserzthreee.ToLower() == "b" || awnserzthreee.ToLower() == "c")
         }
     }
 
+}
+}else {
+    Console.WriteLine("that counts as a wrong awnser, should have awnserd with one of the alternatives");
+}
+Console.WriteLine("the awnser to this question is incorrect");
+Console.WriteLine("A. true  B. incorrect  C. what?");
+string awns4 = Console.ReadLine();
+if (awns4.ToLower() == "a" || awns4.ToLower() == "b" ||awns4.ToLower() == "c"){
+if (awns4.ToLower() == "b")
+{
+    score4 = true;
+    correct = correct + 1;
+   if (score4 == true){
+   if (score3 == true)
+    {
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("you got them all!!");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("slow start");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("you did great");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("lucky guess >:(");
+            }
+        }
+    }
+    if (score3 == false)
+    {
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("ah sooooo close :(");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("must have been lucky on question 2");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("peaked on the first question");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("how are you so bad at this");
+            }
+        }
+    }
+   }
+
+
+}
+
+if (awns4.ToLower() == "a" || awns4.ToLower() == "c")
+{
+   if (score4 == false){
+   if (score3 == true)
+    {
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("you got them all!!");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("good save");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("must have missclicked on question 2 ;)");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("lucky guess >:(");
+            }
+        }
+    }
+    if (score3 == false)
+    {
+        if (score2 == true)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("ah sooooo close :(");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("must have been lucky on question 2");
+            }
+        }
+        if (score2 == false)
+        {
+            if (score1 == true)
+            {
+                Console.WriteLine("peaked on the first question");
+            }
+            if (score1 == false)
+            {
+                Console.WriteLine("how are you so bad at this");
+            }
+        }
+    }
+   }
 }
 }else {
     Console.WriteLine("that counts as a wrong awnser, should have awnserd with one of the alternatives");
