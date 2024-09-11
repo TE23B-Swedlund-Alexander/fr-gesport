@@ -12,3 +12,4 @@ c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\
 c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.pdb
 c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.genruntimeconfig.cache
 c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\ref\frågesport.dll
+c:\Users\alexander.swedlund\New folder\frågesport\frågesport\obj\Debug\net8.0\frågesport.sourcelink.json
